@@ -1,1404 +1,998 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon" />
-    <title>فروشگاه اینترنتی دسترسی - https://www.dastresi.com/</title>
-  </head>
-  <body onload="startTime()">
-    <!-- header -->
-    <div class="navbar">
-      <div class="nav-top container-r">
-        <div class="nav-top-right container-r">
-          <div class="logo">
-            <a href="./page-two.html"
-              ><img src="./public/img/logo.png" alt="logo"
-            /></a>
-          </div>
-          <input type="search" name="" id="" placeholder="search" />
-          <a href="https://www.dastresi.com/customer-club"> باشگاه مشتریان </a>
-          <a href="https://www.dastresi.com/blog"> بلاگ </a>
-          <a href="https://www.dastresi.com/contact"> ارتباط ما </a>
-          <a href="https://www.dastresi.com/about"> درباره ما </a>
-        </div>
-        <div class="nav-top-left container-r">
-          <a href="https://www.dastresi.com/basket" class="btn btn-right">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              height="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g></svg></a
-          ><a href="https://www.dastresi.com/login" class="btn btn-left"
-            >ورود و ثبت‌ نام</a
-          >
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="https://www.dastresi.com/">خانه</a></li>
-          <li class="dropdown">
-            <a
-              href="https://www.dastresi.com/products/mobile-accessories"
-              class="dropbtn"
-              >لوازم جانبی موبایل و کامپیوتر
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <div class="dropdown-content">
-              <a href="https://www.dastresi.com/products/172"
-                >ماوس و کیبورد و پدموس</a
-              >
-              <a href="#">اسپیکر</a>
-              <a href="#">تجهیزات ذخیره سازی</a>
-              <a href="#">هولدر و نگهدارنده</a>
-              <a href="#">کابل شارژ</a>
-              <a href="#">آداپتور و شارژر</a>
-              <a href="#">هندزفری و هدست، میکروفون</a>
-              <a href="#">پاوربانک و جامپ استارتر</a>
-              <a href="#">دسته بازی و خنک کننده موبایل</a>
-              <a href="#">انواع تبدیل برق</a>
-              <a href="#">کابل و دانگل انتقال تصویر</a>
-              <a href="#">انواع هاب</a>
-              <a href="#">فن خنک کننده کامپیوتر</a>
-              <a href="#">قاب و گلس</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="https://www.dastresi.com/products/132" class="dropbtn">
-              کابل مبدل رابط
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="https://www.dastresi.com/products/186" class="dropbtn">
-              لوازم تولید محتوا
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="https://www.dastresi.com/products/141" class="dropbtn">
-              لوازم شبکه
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="https://www.dastresi.com/products/177" class="dropbtn">
-              کنسول بازی و لوازم جانبی
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="https://www.dastresi.com/products/160" class="dropbtn">
-              لوازم خانگی و شخصی
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="https://www.dastresi.com/products" class="dropbtn"
-              >برند ها
-              <svg
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 10L12 15L17 10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g></svg
-            ></a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- main -->
-    <main>
-      <section class="section-1 roudnd">
-        <div class="swiper Swiper-one">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/banner-dastresi-1 (1).png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/banner-dastresi-2-min.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/banner-dastresi-4-min.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-      <section class="section-2 roudnd container-c">
-        <div class="top container-r">
-          <div class="text">
-            <svg
-              width="45px"
-              hight="50px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M21.7071 3.70711C22.0976 3.31658 22.0976 2.68342 21.7071 2.29289C21.3166 1.90237 20.6834 1.90237 20.2929 2.29289L2.29289 20.2929C1.90237 20.6834 1.90237 21.3166 2.29289 21.7071C2.68342 22.0976 3.31658 22.0976 3.70711 21.7071L21.7071 3.70711Z"
-                  fill="#FE5F55"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM4.00693 6.5C4.00693 7.87689 5.12311 8.99307 6.5 8.99307C7.87689 8.99307 8.99307 7.87689 8.99307 6.5C8.99307 5.12311 7.87689 4.00693 6.5 4.00693C5.12311 4.00693 4.00693 5.12311 4.00693 6.5Z"
-                  fill="#FE5F55"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M22 17.5C22 19.9853 19.9853 22 17.5 22C15.0147 22 13 19.9853 13 17.5C13 15.0147 15.0147 13 17.5 13C19.9853 13 22 15.0147 22 17.5ZM15.0069 17.5C15.0069 18.8769 16.1231 19.9931 17.5 19.9931C18.8769 19.9931 19.9931 18.8769 19.9931 17.5C19.9931 16.1231 18.8769 15.0069 17.5 15.0069C16.1231 15.0069 15.0069 16.1231 15.0069 17.5Z"
-                  fill="#FE5F55"
-                ></path>
-              </g>
-            </svg>
-            تخفیف‌های روزانه دسترسی
-          </div>
-          <div id="time"></div>
-        </div>
-        <div class="bottom container-r">
-          <div class="right card">
-            <div class="card-img">
-              <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-            </div>
-            <div class="card-text">
-              <div class="disc">
-                ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-              </div>
-              <div class="price">
-                <div class="first">3,250,000</div>
-                <div class="second">
-                  <div class="up">255,000 تومان تخفیف</div>
-                  <div class="down">2,995,000 تومان</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mid card">
-            <div class="card-img">
-              <img src="./public/img/anker-2698-11.jpg" alt="" />
-            </div>
-            <div class="card-text">
-              <div class="disc">
-                شارژر دیواری 30 واتی Zolo انکر مدل Anker A2698
-              </div>
-              <div class="price">
-                <div class="first"></div>
-                <div class="second">
-                  <div class="up">200,000 تومان تخفیف</div>
-                  <div class="down">950,000 تومان</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="left container-c">
-            <div class="bottom-top card-r">
-              <div class="card-img">
-                <img src="./public/img/MCDODO-422-11.jpg" alt="" />
-              </div>
-              <div class="card-text">
-                <div class="disc">
-                  پاوربانک 10000 میلی آمپر 22.5 واتی مک دودو مدل Mcdodo MC-4220
-                </div>
-                <div class="price">
-                  <div class="first"></div>
-                  <div class="second">
-                    <div class="up">200,000 تومان تخفیف</div>
-                    <div class="down">1,397,000 تومان</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="left-mid card-r">
-              <div class="card-img">
-                <img src="./public/img/PPCHA34-11.jpg" alt="" />
-              </div>
-              <div class="card-text">
-                <div class="disc">
-                  پاوربانک 10000 میلی آمپری 20 واتی وایرلس شارژ مگ سیف پاورولوژی
-                  مدل Powerology Ppbcha34
-                </div>
-                <div class="price">
-                  <div class="first"></div>
-                  <div class="second">
-                    <div class="up">200,000 تومان تخفیف</div>
-                    <div class="down">1,975,000 تومان</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bottom card-r">
-              <div class="card-img">
-                <img src="./public/img/PowerologyPHDMRABK-1.jpg" alt="" />
-              </div>
-              <div class="card-text">
-                <div class="disc">
-                  فرستنده HDMI بی سیم پاورولوژی مدل Powerlogy Phdmrabk
-                </div>
-                <div class="price">
-                  <div class="first"></div>
-                  <div class="second">
-                    <div class="up">200,000 تومان تخفیف</div>
-                    <div class="down">4,997,000 تومان</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-3 roudnd">
-        <h2>دسته‌بندی‌های منتخب</h2>
-        <div class="swiper Swiper-two">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/cable.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/adaptor.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/powerbank.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/handsfree.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/Holder Negahdarande.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/mobadel o rabet.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/battery.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img">
-                <img src="./public/img/gaming.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <section class="section-4 roudnd container-c">
-        <div class="top container-r">
-          <div class="text">همین الان موجود شد...</div>
-          <a
-            class="link"
-            href="https://www.dastresi.com/products?sort=0&avaliable_products=1"
-            >مشاهده همه محصولات
-            <svg
-              width="30px"
-              fill="#000000"
-              viewBox="0 0 24 24"
-              id="left-arrow-direction-square"
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon line"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  id="primary"
-                  d="M21,4V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20A1,1,0,0,1,21,4Zm-4,8H12m-4.63.69,3.13,2.14a1,1,0,0,0,1.5-.69V9.86a1,1,0,0,0-1.5-.69L7.38,11.31A.82.82,0,0,0,7.37,12.69Z"
-                  style="
-                    fill: none;
-                    stroke: #757575;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 1.5;
-                  "
-                ></path>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="bottom container-r">
-          <div class="swiper Swiper-three">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-      </section>
-      <section class="section-5 roudnd">
-        <h2>چرا دسترسی رو برای خرید انتخاب کنیم؟</h2>
-        <div class="card-wrpper">
-          <div class="card">
-            <div class="card-img">
-              <img src="./public/img/icon2.png" alt="" />
-            </div>
-            <h2>مشاوره تخصصی برای خرید محصول</h2>
-            <div class="card-text">
-              برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب
-              رو انجام دهید.
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./public/img/icon1.png" alt="" />
-            </div>
-            <h2>قیمت مناسب با بالاترین کیفیت</h2>
-            <div class="card-text">
-              گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب‌ترین قیمت به
-              دست شما برساند.
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./public/img/icon3.png" alt="" />
-            </div>
-            <h2>ارسال سریع</h2>
-            <div class="card-text">
-              ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه تهران) صورت می
-              گیرد.
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./public/img/icon4.png" alt="" />
-            </div>
-            <h2>امکان خرید حضوری</h2>
-            <div class="card-text">
-              مشتری گرامی جهت خرید حضوری می‌توانید به آدرس مندرج در پایین سایت
-              مراجعه نمایید.
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-6 roudnd container-c">
-        <div class="top container-r">
-          <div class="text">همین الان موجود شد...</div>
-          <a
-            class="link"
-            href="https://www.dastresi.com/products?sort=0&avaliable_products=1"
-            >مشاهده همه محصولات
-            <svg
-              width="30px"
-              fill="#000000"
-              viewBox="0 0 24 24"
-              id="left-arrow-direction-square"
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon line"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  id="primary"
-                  d="M21,4V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20A1,1,0,0,1,21,4Zm-4,8H12m-4.63.69,3.13,2.14a1,1,0,0,0,1.5-.69V9.86a1,1,0,0,0-1.5-.69L7.38,11.31A.82.82,0,0,0,7.37,12.69Z"
-                  style="
-                    fill: none;
-                    stroke: #757575;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 1.5;
-                  "
-                ></path>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="bottom container-r">
-          <div class="swiper Swiper-three">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-card">
-                  <div class="card-img">
-                    <img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
-                  </div>
-                  <div class="card-text">
-                    <div class="disc">
-                      ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011
-                    </div>
-                    <div class="price">
-                      <div class="first"></div>
-                      <div class="second">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-      </section>
-      <section class="section-7 roudnd">
-        <div class="top container-r">
-          <h2 class="text">محبوب ترین برندها</h2>
-        </div>
-        <div class="swiper Swiper-five">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/brands/anker"
-                  ><img src="./public/img/logo-1.jpg" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/brands/inoben"
-                  ><img src="./public/img/inoben.jpg" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/brands/ravpower"
-                  ><img src="./public/img/Untitled-159.jpg" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/brands/mcdodo"
-                  ><img
-                    src="./public/img/H64c19886758b40378c31d5f46c5ae984A.jpg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/products?brands[0]=21"
-                  ><img src="./public/img/logp.jpg" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/brands/powerology"
-                  ><img src="./public/img/logo.jpg" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-img floating-card">
-                <a href="https://www.dastresi.com/brands/AceFast"
-                  ><img src="./public/img/Untitled-1(2).jpg" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-8 roudnd">
-        <div class="top container-r">
-          <h2 class="text">آخرین مقالات</h2>
-          <a class="link" href=""
-            >ورود به بلاگ
-            <svg
-              width="30px"
-              fill="#000000"
-              viewBox="0 0 24 24"
-              id="left-arrow-direction-square"
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon line"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  id="primary"
-                  d="M21,4V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20A1,1,0,0,1,21,4Zm-4,8H12m-4.63.69,3.13,2.14a1,1,0,0,0,1.5-.69V9.86a1,1,0,0,0-1.5-.69L7.38,11.31A.82.82,0,0,0,7.37,12.69Z"
-                  style="
-                    fill: none;
-                    stroke: #757575;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 1.5;
-                  "
-                ></path>
-              </g></svg
-          ></a>
-        </div>
-        <div class="swiper Swiper-six">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/anker"
-                    ><img
-                      src="./public/img/Why-iPhone-is-not-charging- dastresiArtboard 1 copy.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">
-                  چرا آیفون من شارژ نمی‌شود؟ راهنمای رفع مشکل
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/inoben"
-                    ><img
-                      src="./public/img/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">
-                  کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغات...
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/ravpower"
-                    ><img
-                      src="./public/img/wireless-charging-vs-charger-dastresiArtboard 1.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">
-                  شارژ بی‌ سیم در برابر شارژ با کابل: کدام یک برای آیفون ...
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/mcdodo"
-                    ><img
-                      src="./public/img/iphone-cable-charger-dastresiArtboard 1.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">
-                  بهترین کابل شارژ برای آیفون: راهنمای کامل انتخاب در ۵ د...
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/products?brands[0]=21"
-                    ><img
-                      src="./public/img/wired-handsfree-phone-dastresi-.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">خرید بهترین هندزفری سیمی تا ۵۰۰ تومان</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/powerology"
-                    ><img
-                      src="./public/img/best-smelling-microphone-dastresi-Artboard 1 copy 2 (1).jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">معرفی ۵ مدل از بهترین میکروفون بویا</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/AceFast"
-                    ><img
-                      src="./public/img/Microphone-under-1-millionArtboard 1 (1).jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">
-                  راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="floating-card">
-                <div class="swiper-img">
-                  <a href="https://www.dastresi.com/brands/AceFast"
-                    ><img
-                      src="./public/img/ssd-external-dastresi-Artboard 1 copy 3.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="text">
-                  بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار هم!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-    </main>
-    <!-- footer -->
-    <footer>
-      <div class="top container-r">
-        <div class="top-1 container-r">
-          <svg
-            width="18px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            transform="matrix(-1, 0, 0, 1, 0, 0)"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
-                stroke="#757575"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </g></svg
-          >021-33902646
-        </div>
-        <div class="top-2 container-r">
-          <svg
-            width="20px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M12 7V12L13.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                stroke="#757575"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </g>
-          </svg>
-          شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح الی
-          ساعت 16
-        </div>
-        <div class="top-3 container-r">
-          <svg
-            width="20px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                stroke="#757575"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                stroke="#757575"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </g>
-          </svg>
-          تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه بدیع
-        </div>
-      </div>
-      <div class="mid container-r">
-        <div class="mid-1 fccc">
-          <div class="mid-1-1 fcc">
-            <img src="./public/img/logo.png" alt="" />
-          </div>
-          <div class="mid-1-2 container-r">
-            <p>با ما در ارتباط باشید:</p>
-            <img src="./public/img/instagram.png" alt="" />
-          </div>
-        </div>
-        <div class="mid-2 fccc">
-          <h3>فروشگاه اینترنتی دسترسی</h3>
-          <div class="paragraph">
-            فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در
-            حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398
-            از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای
-            اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از
-            مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به
-            فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب
-            صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه
-            آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست،
-            لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده
-            دیجیتال و هزاران گجت جذاب ادامه میدهد.
-          </div>
-        </div>
-        <div class="mid-3 fccc">
-          <h3>دسترسی سریع</h3>
-          <div class="link-wrapper fccc">
-            <a href="https://www.dastresi.com/customer-club">باشگاه مشتریان</a>
-            <a href="https://www.dastresi.com/faq">سوالات متداول</a>
-            <a href="https://www.dastresi.com/blog">بلاگ</a>
-            <a href="https://www.dastresi.com/terms">شرایط و قوانین</a>
-            <a href="https://www.dastresi.com/contact">ارتباط ما</a>
-            <a href="https://www.dastresi.com/about">درباره ما</a>
-          </div>
-        </div>
-        <div class="mid-4 fcc">
-          <a
-            href="https://trustseal.enamad.ir/?id=459575&Code=4u4bb1mwWD7m6bFkyaB3VmkLmc3DeldU"
-            ><img src="./public/img/enamad.png" alt=""
-          /></a>
-        </div>
-      </div>
-      <div class="bottom fcc">
-        تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.
-      </div>
-    </footer>
-    <!-- script -->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-    <script src="./src/js/swiper.js"></script>
-    <script src="./src/js/time.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon" />
+		<title>فروشگاه اینترنتی دسترسی - https://www.dastresi.com/</title>
+	</head>
+	<body onload="startTime()">
+		<!-- header -->
+		<div class="navbar">
+			<div class="nav-top container-r">
+				<div class="nav-top-right container-r">
+					<div class="logo">
+						<a href="./page-two.html"><img src="./public/img/logo.png" alt="logo" /></a>
+					</div>
+					<input type="search" name="" id="" placeholder="search" />
+					<a href="https://www.dastresi.com/customer-club"> باشگاه مشتریان </a>
+					<a href="https://www.dastresi.com/blog"> بلاگ </a>
+					<a href="https://www.dastresi.com/contact"> ارتباط ما </a>
+					<a href="https://www.dastresi.com/about"> درباره ما </a>
+				</div>
+				<div class="nav-top-left container-r">
+					<a href="https://www.dastresi.com/basket" class="btn btn-right">
+						<svg viewBox="0 0 24 24" fill="none" height="20px" xmlns="http://www.w3.org/2000/svg">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g></svg></a
+					><a href="https://www.dastresi.com/login" class="btn btn-left">ورود و ثبت‌ نام</a>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="https://www.dastresi.com/">خانه</a></li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products/mobile-accessories" class="dropbtn"
+							>لوازم جانبی موبایل و کامپیوتر
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+						</a>
+						<div class="dropdown-content">
+							<a href="https://www.dastresi.com/products/172">ماوس و کیبورد و پدموس</a>
+							<a href="#">اسپیکر</a>
+							<a href="#">تجهیزات ذخیره سازی</a>
+							<a href="#">هولدر و نگهدارنده</a>
+							<a href="#">کابل شارژ</a>
+							<a href="#">آداپتور و شارژر</a>
+							<a href="#">هندزفری و هدست، میکروفون</a>
+							<a href="#">پاوربانک و جامپ استارتر</a>
+							<a href="#">دسته بازی و خنک کننده موبایل</a>
+							<a href="#">انواع تبدیل برق</a>
+							<a href="#">کابل و دانگل انتقال تصویر</a>
+							<a href="#">انواع هاب</a>
+							<a href="#">فن خنک کننده کامپیوتر</a>
+							<a href="#">قاب و گلس</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products/132" class="dropbtn">
+							کابل مبدل رابط
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+						</a>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products/186" class="dropbtn">
+							لوازم تولید محتوا
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+						</a>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products/141" class="dropbtn">
+							لوازم شبکه
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+						</a>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products/177" class="dropbtn">
+							کنسول بازی و لوازم جانبی
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+						</a>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products/160" class="dropbtn">
+							لوازم خانگی و شخصی
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+						</a>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="https://www.dastresi.com/products" class="dropbtn"
+							>برند ها
+							<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g></svg
+						></a>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- main -->
+		<main>
+			<section class="section-1 roudnd">
+				<div class="swiper Swiper-one">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/banner-dastresi-1 (1).png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/banner-dastresi-2-min.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/banner-dastresi-4-min.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section class="section-2 roudnd container-c">
+				<div class="top container-r">
+					<div class="text">
+						<svg width="45px" hight="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path d="M21.7071 3.70711C22.0976 3.31658 22.0976 2.68342 21.7071 2.29289C21.3166 1.90237 20.6834 1.90237 20.2929 2.29289L2.29289 20.2929C1.90237 20.6834 1.90237 21.3166 2.29289 21.7071C2.68342 22.0976 3.31658 22.0976 3.70711 21.7071L21.7071 3.70711Z" fill="#FE5F55"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM4.00693 6.5C4.00693 7.87689 5.12311 8.99307 6.5 8.99307C7.87689 8.99307 8.99307 7.87689 8.99307 6.5C8.99307 5.12311 7.87689 4.00693 6.5 4.00693C5.12311 4.00693 4.00693 5.12311 4.00693 6.5Z" fill="#FE5F55"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M22 17.5C22 19.9853 19.9853 22 17.5 22C15.0147 22 13 19.9853 13 17.5C13 15.0147 15.0147 13 17.5 13C19.9853 13 22 15.0147 22 17.5ZM15.0069 17.5C15.0069 18.8769 16.1231 19.9931 17.5 19.9931C18.8769 19.9931 19.9931 18.8769 19.9931 17.5C19.9931 16.1231 18.8769 15.0069 17.5 15.0069C16.1231 15.0069 15.0069 16.1231 15.0069 17.5Z" fill="#FE5F55"></path>
+							</g>
+						</svg>
+						تخفیف‌های روزانه دسترسی
+					</div>
+					<div id="time"></div>
+				</div>
+				<div class="bottom container-r">
+					<div class="right card">
+						<div class="card-img">
+							<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+						</div>
+						<div class="card-text">
+							<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+							<div class="price">
+								<div class="first">3,250,000</div>
+								<div class="second">
+									<div class="up">255,000 تومان تخفیف</div>
+									<div class="down">2,995,000 تومان</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mid card">
+						<div class="card-img">
+							<img src="./public/img/anker-2698-11.jpg" alt="" />
+						</div>
+						<div class="card-text">
+							<div class="disc">شارژر دیواری 30 واتی Zolo انکر مدل Anker A2698</div>
+							<div class="price">
+								<div class="first"></div>
+								<div class="second">
+									<div class="up">200,000 تومان تخفیف</div>
+									<div class="down">950,000 تومان</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left container-c">
+						<div class="bottom-top card-r">
+							<div class="card-img">
+								<img src="./public/img/MCDODO-422-11.jpg" alt="" />
+							</div>
+							<div class="card-text">
+								<div class="disc">پاوربانک 10000 میلی آمپر 22.5 واتی مک دودو مدل Mcdodo MC-4220</div>
+								<div class="price">
+									<div class="first"></div>
+									<div class="second">
+										<div class="up">200,000 تومان تخفیف</div>
+										<div class="down">1,397,000 تومان</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="left-mid card-r">
+							<div class="card-img">
+								<img src="./public/img/PPCHA34-11.jpg" alt="" />
+							</div>
+							<div class="card-text">
+								<div class="disc">پاوربانک 10000 میلی آمپری 20 واتی وایرلس شارژ مگ سیف پاورولوژی مدل Powerology Ppbcha34</div>
+								<div class="price">
+									<div class="first"></div>
+									<div class="second">
+										<div class="up">200,000 تومان تخفیف</div>
+										<div class="down">1,975,000 تومان</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bottom card-r">
+							<div class="card-img">
+								<img src="./public/img/PowerologyPHDMRABK-1.jpg" alt="" />
+							</div>
+							<div class="card-text">
+								<div class="disc">فرستنده HDMI بی سیم پاورولوژی مدل Powerlogy Phdmrabk</div>
+								<div class="price">
+									<div class="first"></div>
+									<div class="second">
+										<div class="up">200,000 تومان تخفیف</div>
+										<div class="down">4,997,000 تومان</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-3 roudnd">
+				<h2>دسته‌بندی‌های منتخب</h2>
+				<div class="swiper Swiper-two">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/cable.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/adaptor.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/powerbank.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/handsfree.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/Holder Negahdarande.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/mobadel o rabet.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/battery.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img">
+								<img src="./public/img/gaming.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</section>
+			<section class="section-4 roudnd container-c">
+				<div class="top container-r">
+					<div class="text">همین الان موجود شد...</div>
+					<a class="link" href="https://www.dastresi.com/products?sort=0&avaliable_products=1"
+						>مشاهده همه محصولات
+						<svg width="30px" fill="#000000" viewBox="0 0 24 24" id="left-arrow-direction-square" xmlns="http://www.w3.org/2000/svg" class="icon line">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path id="primary" d="M21,4V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20A1,1,0,0,1,21,4Zm-4,8H12m-4.63.69,3.13,2.14a1,1,0,0,0,1.5-.69V9.86a1,1,0,0,0-1.5-.69L7.38,11.31A.82.82,0,0,0,7.37,12.69Z" style="fill: none; stroke: #757575; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5"></path>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class="bottom container-r">
+					<div class="swiper Swiper-three">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section-5 roudnd">
+				<h2>چرا دسترسی رو برای خرید انتخاب کنیم؟</h2>
+				<div class="card-wrpper">
+					<div class="card">
+						<div class="card-img">
+							<img src="./public/img/icon2.png" alt="" />
+						</div>
+						<h2>مشاوره تخصصی برای خرید محصول</h2>
+						<div class="card-text">برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب رو انجام دهید.</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="./public/img/icon1.png" alt="" />
+						</div>
+						<h2>قیمت مناسب با بالاترین کیفیت</h2>
+						<div class="card-text">گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب‌ترین قیمت به دست شما برساند.</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="./public/img/icon3.png" alt="" />
+						</div>
+						<h2>ارسال سریع</h2>
+						<div class="card-text">ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه تهران) صورت می گیرد.</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="./public/img/icon4.png" alt="" />
+						</div>
+						<h2>امکان خرید حضوری</h2>
+						<div class="card-text">مشتری گرامی جهت خرید حضوری می‌توانید به آدرس مندرج در پایین سایت مراجعه نمایید.</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-6 roudnd container-c">
+				<div class="top container-r">
+					<div class="text">همین الان موجود شد...</div>
+					<a class="link" href="https://www.dastresi.com/products?sort=0&avaliable_products=1"
+						>مشاهده همه محصولات
+						<svg width="30px" fill="#000000" viewBox="0 0 24 24" id="left-arrow-direction-square" xmlns="http://www.w3.org/2000/svg" class="icon line">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path id="primary" d="M21,4V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20A1,1,0,0,1,21,4Zm-4,8H12m-4.63.69,3.13,2.14a1,1,0,0,0,1.5-.69V9.86a1,1,0,0,0-1.5-.69L7.38,11.31A.82.82,0,0,0,7.37,12.69Z" style="fill: none; stroke: #757575; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5"></path>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class="bottom container-r">
+					<div class="swiper Swiper-three">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-card">
+									<div class="card-img">
+										<img src="./public/img/MASA-POWEROLOGY-1.jpg" alt="" />
+									</div>
+									<div class="card-text">
+										<div class="disc">ماساژور ULTRA-MINI پاورولوژی مدل Powerology SM011</div>
+										<div class="price">
+											<div class="first"></div>
+											<div class="second">
+												<div class="up"></div>
+												<div class="down"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section-7 roudnd">
+				<div class="top container-r">
+					<h2 class="text">محبوب ترین برندها</h2>
+				</div>
+				<div class="swiper Swiper-five">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/brands/anker"><img src="./public/img/logo-1.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/brands/inoben"><img src="./public/img/inoben.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/brands/ravpower"><img src="./public/img/Untitled-159.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/brands/mcdodo"><img src="./public/img/H64c19886758b40378c31d5f46c5ae984A.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/products?brands[0]=21"><img src="./public/img/logp.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/brands/powerology"><img src="./public/img/logo.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-img floating-card">
+								<a href="https://www.dastresi.com/brands/AceFast"><img src="./public/img/Untitled-1(2).jpg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-8 roudnd">
+				<div class="top container-r">
+					<h2 class="text">آخرین مقالات</h2>
+					<a class="link" href=""
+						>ورود به بلاگ
+						<svg width="30px" fill="#000000" viewBox="0 0 24 24" id="left-arrow-direction-square" xmlns="http://www.w3.org/2000/svg" class="icon line">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path id="primary" d="M21,4V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20A1,1,0,0,1,21,4Zm-4,8H12m-4.63.69,3.13,2.14a1,1,0,0,0,1.5-.69V9.86a1,1,0,0,0-1.5-.69L7.38,11.31A.82.82,0,0,0,7.37,12.69Z" style="fill: none; stroke: #757575; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5"></path>
+							</g></svg
+					></a>
+				</div>
+				<div class="swiper Swiper-six">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/anker"><img src="./public/img/Why-iPhone-is-not-charging- dastresiArtboard 1 copy.jpg" alt="" /></a>
+								</div>
+								<div class="text">چرا آیفون من شارژ نمی‌شود؟ راهنمای رفع مشکل</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/inoben"><img src="./public/img/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg" alt="" /></a>
+								</div>
+								<div class="text">کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغات...</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/ravpower"><img src="./public/img/wireless-charging-vs-charger-dastresiArtboard 1.jpg" alt="" /></a>
+								</div>
+								<div class="text">شارژ بی‌ سیم در برابر شارژ با کابل: کدام یک برای آیفون ...</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/mcdodo"><img src="./public/img/iphone-cable-charger-dastresiArtboard 1.jpg" alt="" /></a>
+								</div>
+								<div class="text">بهترین کابل شارژ برای آیفون: راهنمای کامل انتخاب در ۵ د...</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/products?brands[0]=21"><img src="./public/img/wired-handsfree-phone-dastresi-.jpg" alt="" /></a>
+								</div>
+								<div class="text">خرید بهترین هندزفری سیمی تا ۵۰۰ تومان</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/powerology"><img src="./public/img/best-smelling-microphone-dastresi-Artboard 1 copy 2 (1).jpg" alt="" /></a>
+								</div>
+								<div class="text">معرفی ۵ مدل از بهترین میکروفون بویا</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/AceFast"><img src="./public/img/Microphone-under-1-millionArtboard 1 (1).jpg" alt="" /></a>
+								</div>
+								<div class="text">راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="floating-card">
+								<div class="swiper-img">
+									<a href="https://www.dastresi.com/brands/AceFast"><img src="./public/img/ssd-external-dastresi-Artboard 1 copy 3.jpg" alt="" /></a>
+								</div>
+								<div class="text">بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار هم!</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer>
+			<div class="top container-r">
+				<div class="top-1 container-r">
+					<svg width="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path
+								d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+								stroke="#757575"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</g></svg
+					>021-33902646
+				</div>
+				<div class="top-2 container-r">
+					<svg width="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path d="M12 7V12L13.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</g>
+					</svg>
+					شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح الی ساعت 16
+				</div>
+				<div class="top-3 container-r">
+					<svg width="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</g>
+					</svg>
+					تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه بدیع
+				</div>
+			</div>
+			<div class="mid container-r">
+				<div class="mid-1 fccc">
+					<div class="mid-1-1 fcc">
+						<img src="./public/img/logo.png" alt="" />
+					</div>
+					<div class="mid-1-2 container-r">
+						<p>با ما در ارتباط باشید:</p>
+						<img src="./public/img/instagram.png" alt="" />
+					</div>
+				</div>
+				<div class="mid-2 fccc">
+					<h3>فروشگاه اینترنتی دسترسی</h3>
+					<div class="paragraph">
+						فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398 از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه آداپتور موبایل،
+						کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست، لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده دیجیتال و هزاران گجت جذاب ادامه میدهد.
+					</div>
+				</div>
+				<div class="mid-3 fccc">
+					<h3>دسترسی سریع</h3>
+					<div class="link-wrapper fccc">
+						<a href="https://www.dastresi.com/customer-club">باشگاه مشتریان</a>
+						<a href="https://www.dastresi.com/faq">سوالات متداول</a>
+						<a href="https://www.dastresi.com/blog">بلاگ</a>
+						<a href="https://www.dastresi.com/terms">شرایط و قوانین</a>
+						<a href="https://www.dastresi.com/contact">ارتباط ما</a>
+						<a href="https://www.dastresi.com/about">درباره ما</a>
+					</div>
+				</div>
+				<div class="mid-4 fcc">
+					<a href="https://trustseal.enamad.ir/?id=459575&Code=4u4bb1mwWD7m6bFkyaB3VmkLmc3DeldU"><img src="./public/img/enamad.png" alt="" /></a>
+				</div>
+			</div>
+			<div class="bottom fcc">تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.</div>
+		</footer>
+		<!-- script -->
+		<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+		<script src="./src/js/swiper.js"></script>
+		<script src="./src/js/time.js"></script>
+	</body>
 </html>
